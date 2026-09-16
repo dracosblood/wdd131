@@ -1,0 +1,127 @@
+:root {
+    --primary-color: #7206d6;
+    --secondary-color:  #2d2d2d;
+    --title-color: #0e1318;
+    --font-family: "Roboto", sans-serif;
+    --accent1-color: #f1f7fa;
+    --hover-color: #baf3eb;
+    --font-size: 16px;
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: var(--font-family);
+    background-color: #f4f4f4;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    
+}
+
+header{
+    background-color: var(--primary-color);
+    color: var(--accent1-color);
+    padding: 20px;
+    text-align: center;
+    width: 100%;
+    height: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  
+}
+
+header nav{
+    display: flex;
+    gap: 20px;
+    text-decoration: none;
+}
+header nav button{
+    background: none;
+    border: none;
+    color: var(--accent1-color);
+    font-size: 24px;
+    cursor: pointer;
+}
+nav a{
+    display: none;
+}
+.temple-nav.show {
+    position: absolute;
+    top: 0;
+    right: 0;
+    border: none;
+    box-shadow: none;
+    outline: none;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--primary-color);
+    gap: 10px;
+    z-index: 1000;
+    width: 100%;
+  
+}
+.temple-nav.show a {
+    display: block;
+    color: var(--accent1-color);
+    padding: 10px 0;
+    text-decoration: none;
+    align-self: center;
+   
+}
+
+
+@media (max-width: 450px) {
+   .container{
+    max-width: 100%;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 20px;
+    padding: 20px;
+    }
+
+    main h1{
+    grid-column: 1 / -1;
+    text-align: center;
+    color: var(--title-color);
+    }
+    .container figure{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    border-radius: 5px;
+
+    }
+    .container figure:hover{
+    transform: scale(1.05);
+    transition: transform 0.3s ease-in-out;
+    cursor: pointer;
+    }
+
+}
+
+img{
+    width: 100%;
+    height: 200px;
+    border-radius: 5px;
+}
+
+
+
+footer{
+    background-color: var(--primary-color);
+    color: var(--accent1-color);
+    padding: 20px;
+    text-align: center;
+    width: 100%;
+    height: auto;
+    margin-top: 20px;
+}
