@@ -13,6 +13,7 @@
     margin: 0;
     padding: 0;
 }
+
 body{
     font-family: var(--font-family);
     background-color: #f4f4f4;
@@ -87,7 +88,7 @@ nav a{
     padding: 20px;
     }
 
-    main h1{
+    main h2{
     grid-column: 1 / -1;
     text-align: center;
     color: var(--title-color);
@@ -96,6 +97,7 @@ nav a{
     display: flex;
     flex-direction: column;
     align-items: center;
+
     padding: 10px;
     border-radius: 5px;
 
@@ -105,6 +107,7 @@ nav a{
     transition: transform 0.3s ease-in-out;
     cursor: pointer;
     }
+
 
 }
 
