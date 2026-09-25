@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="WDD 131 - Dynamic Web Fundamentals - Darwin J Tovar, Country page">
+    <meta name="author" content="Darwin J Tovar">
+    <link href="styles/place.css" rel="stylesheet">
+    <link href="styles/place-large.css" rel="stylesheet" media="screen and (min-width: 1024px)">
+    <script src="scripts/place.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <title>Country page</title>
+</head>
+    
+<body>
+    <header  class="title-place">
+        <h1>Venezuela</h1>
+    </header>
+    <main>
+        <picture class="picture-large">
+
+            <source srcset="images/salto_angel_large.webp" media="(min-width: 550px)">
+            <img src="images/salto_angel_movil.webp" alt="salto angel venezuela" width="400px" height="300px">
+        </picture>
+
+        <section class="data">
+            <h2>Data</h2>
+            <dl class="data-list">
+                <dt>Area:</dt>
+                <dd>916,445 km²</dd>
+                <dt>Population:</dt>
+                <dd>28,431,000</dd>
+                <dt>Capital:</dt>
+                <dd>Caracas</dd>
+                <dt>Languages:</dt>
+                <dd>Spanish</dd>
+                <dt>Currency:</dt>
+                <dd>Bolívar</dd>
+                <dt>Time Zone:</dt>
+                <dd>UTC-4.5</dd>
+                <dt>Calling Code:</dt>
+                <dd>+58</dd>
+                <dt>Internet TLD:</dt>
+                <dd>.ve</dd>
+            </dl>
+        </section>
+        <section class="weather">
+            <h2>Weather</h2>
+            <img src="images/weather.svg" alt="Weather Icon" width="50" height="50"> 
+            <dl class="weather-list">
+ 
+                <dt>Temperature:</dt>
+                <dd>28°C</dd>
+                <dt>Conditions:</dt>
+                <dd>Sunny</dd>
+                <dt>Wind:</dt>
+                <dd>10 km/h</dd>
+                <dt>Wind Chill:</dt>
+                <dd id="calculateWindShill"></dd>
+            </dl>
+        </section>
+    </main>
+    <footer class="footer-place">
+        <p><span>&copy; 2026 &#10070; Darwin J. Tovar &#10070; Venezuela</span></p>
+        <p id="lastModified"></p>
+    </footer>
+
+</body>
+</html>
