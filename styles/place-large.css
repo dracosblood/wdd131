@@ -1,24 +1,25 @@
-:root {
-    --primary-color: #05b3f8;
-    --secondary-color:  #b7d0da;
-    --title-color: #0e1318;
-    --font-family: "Roboto", sans-serif;
-    --accent1-color: #f1f7fa;
-    --hover-color: #baf3eb;
-    --font-size: 16px;
-    --transform: rgba(255, 255, 255, 0.9);
-}
 
-body{
-    font-family: var(--font-family);
-    background-color: #f4f4f4;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-   
-}
 @media screen and (min-width: 1024px) {
+    :root {
+        --primary-color: #05b3f8;
+        --secondary-color:  #b7d0da;
+        --title-color: #0e1318;
+        --font-family: "Roboto", sans-serif;
+        --accent1-color: #f1f7fa;
+        --hover-color: #baf3eb;
+        --font-size: 16px;
+        --transform: rgba(255, 255, 255, 0.9);
+    }
+
+    body{
+        font-family: var(--font-family);
+        background-color: #f4f4f4;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+   
+    }
     main{
 
     max-width: 1200px;
@@ -64,9 +65,12 @@ body{
         position:relative ;
         display: flex;
         align-items: center;
-        justify-content: space-around;
+       
         background-color: var(--secondary-color);
 
+    }
+    .data h2::after{
+        content: " .";
     }
     .weather{
         position: absolute;
