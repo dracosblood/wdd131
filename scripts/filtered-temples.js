@@ -61,13 +61,66 @@ const temples = [
   },
   {
     templeName: "Caracas Venezuela",
-    location: "Urb Caurimare Avenida C con Calle C-1, Caracas, Venezuela",
+    location: "Caracas, Venezuela",
     dedicated:" 2000, August, 20",
     area: 15332,
     imageUrl:"https://churchofjesuschristtemples.org/assets/img/temples/caracas-venezuela-temple/caracas-venezuela-temple-70985.jpg"
   }
 ];
 
+createTempleCards(temples);
+
+const homeTemple = document.querySelector("#home");
+const oldTemple = document.querySelector("#old");
+const newTemple = document.querySelector("#new");
+const largeTemple = document.querySelector("#large");
+const smallTemple = document.querySelector("#small");
+
+homeTemple.addEventListener("click", () =>{
+    createTempleCards(temples);
+})
+oldTemple.addEventListener("click", () => {
+    createTempleCards(temples.filter(temple => parseInt(temple.dedicated.split(",")[0])<1900));
+});
+newTemple.addEventListener("click", () =>{
+    createTempleCards(temples.filter(temple => parseInt(temple.dedicated.split(",")[0])>1999));
+})
+largeTemple.addEventListener("click", () => {
+    createTempleCards(temples.filter(temple=> (temple.area >90000)));
+})
+smallTemple.addEventListener("click", () => {
+    createTempleCards(temples.filter(temple =>(temple.area <10000)));
+})
+function createTempleCards(filteredTemples){
+    document.querySelector(".grid-filtered").innerHTML = "";
+    filteredTemples.forEach(temple=> {
+        let card = document.createElement("section");
+        let name = document.createElement("h3");
+        let location = document.createElement("p");
+        let dedication = document.createElement("p");
+        let area = document.createElement("p");
+        let img = document.createElement("img");
+
+
+        name.textContent = temple.templeName;
+        location.innerHTML = `<span class="label">Location:</span> ${temple.location}`;
+        dedication.innerHTML =`<span class="label">Dedication:</span> ${temple.dedicated}`;
+        area.innerHTML = `<span class="label">Size:</span> ${temple.area}`;
+        img.setAttribute("src", temple.imageUrl);
+        img.setAttribute("alt", `${temple.templeName} temple`);
+        img.setAttribute("loading", "lazy");
+
+        card.appendChild(name);
+        card.appendChild(location);
+        card.appendChild(dedication);
+        card.appendChild(area);
+        card.appendChild(img);
+
+        document.querySelector(".grid-filtered").appendChild(card);
+
+
+    })
+}
 
 
 document.querySelector("#hamburger").addEventListener("click", function() {
