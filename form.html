@@ -21,14 +21,15 @@
     <main>
         <form id="reviewForm" action="review.html" method="get">
             <fieldset>
+                <h2>Product Name</h2>
+                <label for="productName">
+                    <select id="productName" name="productName" required>
+                        <option value="" disabled selected>Select a Product ...</option>
 
-                <label for="productName"><h2>Product Name</h2></label>
-                <select id="productName" name="productName" required>
-                    <option value="" disabled selected>Select a Product ...</option>
 
 
-
-                </select>
+                    </select>
+                </label>
                 <section class="rating-form">
 
                      <h3>Overall Rating</h3>
@@ -111,8 +112,10 @@
                     </div>
                 </section>
                 <section class="date">
-                    <label for="date"><h3>Date of Installation</h3></label>
-                    <input type="date" id="date" name="date" required>
+                    <h3>Date of Installation</h3>
+                    <label for="date">
+                        <input type="date" id="date" name="date" required>
+                    </label>
                 </section>
                 <section class="features">
                     <h3>Which features did you find useful in the product</h3>
