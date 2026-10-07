@@ -59,7 +59,7 @@ const beach = [
     },
    
 ]
-
+createBeachCards(beach);
 function createBeachCards(BeachCard){
     document.querySelector(".grid-beach").innerHTML = "";
     BeachCard.forEach(beach=> {
