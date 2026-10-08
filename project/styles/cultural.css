@@ -23,7 +23,7 @@ body {
     justify-content: center;
     align-items: center;
 }
-.beachs-container{
+.cultural-container{
     max-width: 100%;
     display: grid;
     grid-template-columns: repeat(1, 1fr);
@@ -37,7 +37,7 @@ main h2{
     font-size: 1.5rem;
     color: var(--title-color);
 }
-.grid-beach{
+.grid-cultural{
     display: grid;
     grid-template-columns: 1fr;
     gap: 20px;
@@ -121,35 +121,37 @@ img{
 
 
 
-.grid-beach section{
+.grid-cultural section{
     background-color: var(--background-color);
     padding: 20px;
     text-align: center;
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
-.grid-beach h3{
+.grid-cultural h3{
     font-size: 1.5rem;
     font-family: var(--titles-font);
     color: var(--title-color);
     margin: 0 0 15px 0;
 }
-.grid-beach p{
+.grid-cultural p{
     margin: 5px 0;
     font-size: 0.9rem;
 
     color: #555;
 }
-.grid-beach .label{
+.grid-cultural .label{
     font-weight: bold;
     text-transform: uppercase;
 }
-.grid-beach img:hover{
+.grid-cultural img:hover{
     transform: scale(1.05);
     transition: transform 0.2s ease-in-out;
     cursor: pointer;
 }
-.modal-beach{
+.modal-cultural{
     position: fixed;
     top: 0;
     left: 0;

@@ -122,6 +122,7 @@ nav a{
 .intro img:hover {
     transform: scale(1.05);
     transition: transform 0.2s ease-in-out;
+    cursor: pointer;
 }
 
 .cultural{
@@ -148,7 +149,11 @@ nav a{
     margin: 10px;
     border-radius: 5px;
 }
-
+.cultural img:hover{
+    transform: scale(1.05);
+    transition: transform 0.2s ease-in-out;
+    cursor: pointer;
+}
 
 footer {
     width: 100%;
