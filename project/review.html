@@ -5,38 +5,39 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="WDD 131 - Dynamic Web Fundamentals - Darwin J. Tovar, Cultural page for Güiria Cultural project">
     <meta name="author" content="Darwin J. Tovar">
-    <link rel="stylesheet" href="styles/cultural.css">
-    <link rel="stylesheet" href="styles/cultural-large.css" media="screen and (min-width: 768px)">
+    <link rel="stylesheet" href="styles/review.css">
+    <link rel="stylesheet" href="styles/review-large.css" media="screen and (min-width: 768px)">
 
      <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Alegreya:ital,wght@0,400..900;1,400..900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
     <link rel="icon" href="images/favicon.ico"  type="image/x-icon"> 
-    <script src="scripts/cultural.js" defer></script>
-    <title>Cultural site</title>
+    <script src="scripts/review.js" defer></script>
+    <title>Review page</title>
 </head>
 <body>
     <header class="header"> 
         <section>
             <img src="images/guiria-tourist.webp" alt="Güiria Tourist Logo" class="logo">
-            <h1 class="guiria-tile">Cultural sites of Güiria</h1>
+            <h1 class="guiria-tile">Review your Feedback</h1>
         </section>
         <nav class="guiria-menu">
             <button id="hamburger">&#9776;</button>
             <a href="index.html">Home</a>
-            <a href="restaurant.html">Restaurants</a>
+            <a href="cultural.html">Cultural Sites</a>
             <a href="beach.html">Beaches</a>
+            <a href="restaurant.html">Restaurants</a>
             <a href="feedback.html">Feedback</a>
+
         </nav>
     </header>
-    <main class="cultural-container">
-        <h2>Discover a Special Culture and Legacy.</h2>
-        
-        <section class="grid-cultural">
-
+    <main class="rest-container">
+        <h2>Review Submitted!</h2>
+        <section class="review-submission">
+            <p>Your review has been successfully submitted. Thank you for your feedback!</p>
+            <p class="review-count"><span id="reviewCount">0</span></p>
         </section>
-  
-        
+        <a href="form.html" class="backform">Submit Another Review</a>
     </main>
     <footer>
         <p  id="year"><span></span></p>
